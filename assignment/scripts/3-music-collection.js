@@ -45,10 +45,9 @@ function search(input1, input2, input3) {
     } else if (input1 === undefined && input2 === undefined && input3 === undefined) {
       searchArray = collection;
     } else if (input1 != undefined && input2 === undefined && input3 === undefined) {
-      for (let k = 0; i < collection[i].tracks.length; k++) {
+      for (let k = 0; k < collection[i].tracks.length; k++) {
         if (input1 === collection[i].tracks[k]) {
           console.log(collection[i].tracks[k]);
-          return;
         }
       }
     }
@@ -89,5 +88,6 @@ console.log('---------------------stretch goal tracks------------');
 // console.log(collection);
 // console.log(collection[1].tracks.length);
 search('Minor Thing: 3:38');
+search('random thing');
 console.log('----------------------------------------------------');
 console.log(collection);
